@@ -1,0 +1,15 @@
+/* h2 + a {
+    color: rgb(235, 77, 9);
+    background-color: blue;
+ }
+
+ h2 ~ a {
+    color: rgb(239, 244, 239);
+ } */
+
+ #gra {
+    width: 100%;
+    height:auto;
+    background: linear-gradient(to right, rgb(164, 110, 59), rgb(164, 110, 59, 0));
+    /* background-color:darkblue; */
+ }
