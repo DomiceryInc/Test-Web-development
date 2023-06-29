@@ -1,4 +1,8 @@
 * { box-sizing: border-box;}
+::selection {
+   background-color: rgb(105, 58, 2);
+   color: white;
+}
 #footer {
    background-color: rgb(116, 90, 63);
    color: white;
@@ -234,7 +238,6 @@ img[class*=fixed-image] {
 .css-overflow {
    height: 50px;
    width: 40%;
-   
    overflow-x: auto;
 }
 
@@ -254,8 +257,162 @@ img[class*=fixed-image] {
    float: left;
    margin: 0;
    position: relative;
+}
+
+
+.grid-layout {
+   width: 100%;
+   height: 30px;
+}
+.cssgrid1, .cssgrid2, .cssgrid3, .cssgrid4 {
+   display: inline-block;
+   float: left;
+   width: 25%;
+   padding: 30px;
+   margin: 0;
+   text-align: center;
+}
+.cssgrid1 {
+   background-color: gray;
 
 }
+.cssgrid2 {
+   background-color: black;
+   color: white;
+}
+.cssgrid3{
+   background-color: pink;
+   
+}
+
+.cssgrid4 {
+   background-color: green;
+}
+
+
+/*Stylings for NAVIGATION MENU*/
+.Nav-menu-cointainer {
+   width:100%;
+
+
+}
+.Nav-menu-active, .Nav-menu-1 {
+   text-decoration: none;
+   display: inline-block;
+   padding: 20px;
+   text-align: center;
+   width: 25%;
+   float: left;
+}
+.Nav-menu-active:hover {
+   background-color: navy;
+   color: white;
+   border: 2px solid white;
+   border-radius: 10px;
+   padding: 22px;
+   margin: 5px;
+   font-size: large;
+} 
+
+
+.Nav-menu-1:hover {
+   background-color: navy;
+   color: white;
+   border: 2px solid white;
+   border-radius: 10px;
+   padding: 22px;
+   margin: 5px;
+   font-size: large;
+}
+.Nav-menu-1 {
+   color: white;
+   background-color: black;
+}
+.Nav-menu-active {
+   background-color: red;
+   color: white;
+}
+
+.float-property {
+   padding: 10px;
+   margin: auto;
+   /* border: 2px solid black; */
+}
+
+
+.clearfix-image {
+   width: 50px;
+   height: 200px;
+   display: block;
+   float: left;
+}
+
+
+.css-clearfix {
+   border: 2px solid black;
+   border-radius: 10px;
+   content: "";
+   clear: both;
+   display: table;
+   padding: 20px;
+
+}
+
+.css-text-vertical {
+   border: 3px solid green;
+   padding: 70px 0px 70px 0px;
+   vertical-align: center;
+   text-align: center;
+}
+.alignment {
+   margin: auto;
+   border: 2px solid black;
+}
+   
+.image-aligment {
+   border: 2px solid red;
+   padding: 20px;
+   margin: 5%;
+   display: inline-block;
+   float: left;
+}
+img[src^="/Image/dog"] {
+   width: 100%;
+   height:180px;
+   padding: 5px;
+   border-radius: 10px;
+   border: 2px solid black;
+}
+.text-aligment {
+   clear: right;
+   text-align: center;
+   font-size: larger;
+}
+.alignment-cointainer {
+   border: 2px solid black;
+   border-radius: 10px;
+   width: 30%;
+   height: 250px;
+   float: left;
+   margin: 20px;
+}
+
+/*Pseudo element*/
+.hover_tool {
+   color: red;
+}
+.hidden_p {
+   display: none;
+   background-color: yellow;
+   padding: 20px;
+
+}
+.hover_tool:hover .hidden_p{
+   display: block;
+
+}
+
+
 label, input {
    display: block;
 
